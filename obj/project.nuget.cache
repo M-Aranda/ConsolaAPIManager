@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Sip465wHP0yjmgXBefjw0SFFtkdSO659hNlIfjNFE2ZPUEOO4tj990lF0EuiOhM4fujxVF+/msG8ggK+Fj4WCw==",
+  "dgSpecHash": "F3KzK/Yfqs2Ub8Y6WLGWVdcW97hJcIOl98HPyb47cgg9OMeKQ5GRxifigBAEY8eeqwmqdhJ4eLOAidIdSRQ+eQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Chelo\\source\\repos\\AppConsolaAPIManager\\AppConsolaAPIManager.csproj",
+  "projectFilePath": "C:\\Users\\Chelo\\Desktop\\ConsolaAPIManager\\AppConsolaAPIManager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Chelo\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512"
+    "C:\\Users\\Chelo\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512",
+    "C:\\Users\\Chelo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
+    "C:\\Users\\Chelo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Chelo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Chelo\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -9,24 +9,25 @@ namespace AppConsolaAPIManager
         static void Main(string[] args)
         {
 
-            String url = "https://transpcargo.rexmas.cl/api/v2/aliados/configuracion/cambiar_clave";
+            //String url = "https://transpcargo.rexmas.cl/api/v2/aliados/configuracion/cambiar_clave";
             // String url = "https://transpcargo.rexmas.cl/api/v2/aliados/configuracion/recuperar_token";
+
             //esto es para cambiar la clave
 
-            Console.WriteLine(url);
-            var client = new RestClient(url);
-            client.Timeout = -1;
-            var request = new RestRequest(Method.PUT);
-            request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Token eyJpZCI6NTkxLCJ2YWxpZCI6MiwidXNlcm5hbWUiOiJ0cmFuc3BjYXJnbyIsImNyZWF0aW9uX3RpbWUiOjE2NDM2NjY1NzQuMjYwMTc5fQ.vAPvyCkrHbhXRsbiyrOurvNM6GpbmF-N1mRiJp-_OSc");
-            var body = @"{" + "\n" +
-            @"	""clave_antigua"": ""E7Dw00fWOA7LDi3L""," + "\n" +
-            @"	""clave_nueva"": ""CARGOtcp2022!""," + "\n" +
-            @"	""confirmacion_clave_nueva"": ""CARGOtcp2022!""" + "\n" +
-            @"}";
-            request.AddParameter("application/json", body, ParameterType.RequestBody);
-            IRestResponse response = client.Execute(request);
-            Console.WriteLine(response.Content);
+            //Console.WriteLine(url);
+            //var client = new RestClient(url);
+            //client.Timeout = -1;
+            //var request = new RestRequest(Method.PUT);
+            //request.AddHeader("Content-Type", "application/json");
+            //request.AddHeader("Authorization", "Token eyJpZCI6NTkxLCJ2YWxpZCI6MiwidXNlcm5hbWUiOiJ0cmFuc3BjYXJnbyIsImNyZWF0aW9uX3RpbWUiOjE2NDM2NjY1NzQuMjYwMTc5fQ.vAPvyCkrHbhXRsbiyrOurvNM6GpbmF-N1mRiJp-_OSc");
+            //var body = @"{" + "\n" +
+            //@"	""clave_antigua"": ""E7Dw00fWOA7LDi3L""," + "\n" +
+            //@"	""clave_nueva"": ""CARGOtcp2022!""," + "\n" +
+            //@"	""confirmacion_clave_nueva"": ""CARGOtcp2022!""" + "\n" +
+            //@"}";
+            //request.AddParameter("application/json", body, ParameterType.RequestBody);
+            //IRestResponse response = client.Execute(request);
+            //Console.WriteLine(response.Content);
 
 
             //Esto es para obtener token
@@ -47,6 +48,15 @@ namespace AppConsolaAPIManager
             //eyJpZCI6NTkxLCJ2YWxpZCI6MiwidXNlcm5hbWUiOiJ0cmFuc3BjYXJnbyIsImNyZWF0aW9uX3RpbWUiOjE2NDM2NjY1NzQuMjYwMTc5fQ.vAPvyCkrHbhXRsbiyrOurvNM6GpbmF-N1mRiJp-_OSc
 
 
+            //Obtener listado de empleados
+            String url = "https://transpcargo.rexmas.cl/api/v2/vacaciones?fecha_inicio={{fecha_inicio}}&fecha_fin={{fecha_termino}}";
+            var client = new RestClient(url);
+            client.Timeout = -1;
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("Content-Type", "application/json");
+            request.AddHeader("Authorization", "Token eyJpZCI6NTkxLCJ2YWxpZCI6MiwidXNlcm5hbWUiOiJ0cmFuc3BjYXJnbyIsImNyZWF0aW9uX3RpbWUiOjE2NDM2NjY1NzQuMjYwMTc5fQ.vAPvyCkrHbhXRsbiyrOurvNM6GpbmF-N1mRiJp-_OSc ");
+            IRestResponse response = client.Execute(request);
+            Console.WriteLine(response.Content);
 
 
 
